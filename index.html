@@ -3,11 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
+
 <body>
-   <h1>Hello, world</h1>
-    <p>This is a simple html website</p>
+   <h1>How can i help you today?</h1>
+    <p>Type your message here...</p>
+
+  <button class="open-button">Open Chat</button>
+
+<div class="chat-popup" id="chat-popup" >
+  <form action ="/action_page.php" class="chatform">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message..." name="msg"
+    required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel">Close</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
